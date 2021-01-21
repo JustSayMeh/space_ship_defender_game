@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -124,7 +124,7 @@ namespace Blocks
             LinkedList<Asteroid> blocks_local = new LinkedList<Asteroid>();
             foreach (Asteroid th in blocks)
             {
-                th.position.Y = th.position.Y + 5;
+                th.position.Y = th.position.Y + th.speed;
                 if (th.position.Y > height)
                 {
                     canvas.Remove(th);
@@ -283,7 +283,7 @@ namespace Blocks
             int x = rand.Next(4, w_count - 2);
             int y = 0;
             Point pos = new Point(block_size * x, block_size * y);
-            if (rand.NextDouble() > 0.7 && player.lifecount < 50)
+            if (rand.NextDouble() > 0.9 && player.lifecount < 50)
             {
                 RepairKit rk = new RepairKit(pos, 40);
                 canvas.setPosition(rk);
