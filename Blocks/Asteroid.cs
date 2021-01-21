@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,7 +11,7 @@ namespace Blocks
 {
     class Asteroid : Quad
     {
-        public int lifecount = 1, damage = 1;
+        public int lifecount = 1, damage = 1, speed = 7;
         BitmapImage stage1 = new BitmapImage(new Uri("pack://application:,,,/Images/stage1.png", UriKind.Absolute));
         public Asteroid(Point pos, int xsize) : base(pos, xsize, Brushes.Red)
         {
@@ -42,6 +42,7 @@ namespace Blocks
         {
             damage = 3;
             lifecount = 2;
+            speed = 6;
         }
         public override int decrementLifeCount(int dec)
         {
@@ -64,6 +65,7 @@ namespace Blocks
         {
             lifecount = 3;
             damage = 10;
+            speed = 5;
         }
 
         public override int decrementLifeCount(int dec)
