@@ -16,7 +16,7 @@
                 MouseMove="GameArea_MouseMove"
                 MouseLeftButtonUp="GameArea_MouseLeftButtonUp">
             <Canvas.Background>
-                <ImageBrush ImageSource="C:\\Users\Oleg\\Downloads\\background.png"></ImageBrush>
+                <ImageBrush ImageSource="pack://application:,,,/Images/background.png"></ImageBrush>
             </Canvas.Background>
             <Border  BorderThickness="2" Width="{Binding ElementName=GameArea, Path=Width}" Height="{Binding ElementName=GameArea, Path=Height}"  Name="startMenu" Panel.ZIndex="1">
                 <StackPanel Orientation="Vertical" >
