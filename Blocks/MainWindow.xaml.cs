@@ -290,7 +290,7 @@ namespace Blocks
                 canvas.Add(rk);
                 bonuses.AddLast(rk);
             }else 
-            if (rand.NextDouble() > 0.6)
+            if (rand.NextDouble() > 0.96)
             {
                 DoubleDamage dd = new DoubleDamage(pos, 40);
                 canvas.setPosition(dd);
